@@ -16,6 +16,13 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartComponent } from './chart/chart.component';
 import { ModalChartComponent } from './chart/modal-chart/modal-chart.component';
+import { CategoryComponent } from './category/category.component';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzRateModule } from 'ng-zorro-antd/rate';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
+import { NzStatisticModule } from 'ng-zorro-antd/statistic';
+import { NzResultModule } from 'ng-zorro-antd/result';
 
 registerLocaleData(en);
 
@@ -24,6 +31,8 @@ registerLocaleData(en);
     AppComponent,
     ChartComponent,
     ModalChartComponent,
+    CategoryComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +44,11 @@ registerLocaleData(en);
     NzLayoutModule,
     NzMenuModule,
     NgbModule,
-    CommonModule
+    CommonModule,
+    NzAvatarModule,
+    NzRateModule,
+    NzSpinModule,
+    NzResultModule 
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
