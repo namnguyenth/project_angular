@@ -6,14 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-  model = {
-    left: true,
-    middle: false,
-    right: false
-  };
+
   constructor() { }
 
   ngOnInit() {
+    
   }
+
 
 }
